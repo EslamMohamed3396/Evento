@@ -23,4 +23,12 @@
 
     <!-- UserProfile Menu-->
     <string name="edit">Edit</string>
+
+
+    <!-- Photo Description-->
+    <string name="desc_photo">This is User Profile Picture</string>
+
+    <!--Navigation Drawer-->
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
 </resources>

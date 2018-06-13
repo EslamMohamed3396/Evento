@@ -22,7 +22,8 @@
             android:parentActivityName=".Log_in" />
         <activity
             android:name=".User_Profile"
-            android:label="@string/page_profile"></activity>
+            android:label="@string/page_profile" />
+        <activity android:name=".Home"></activity>
     </application>
 
 </manifest>

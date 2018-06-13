@@ -1,10 +1,9 @@
 package com.example.eslam.wheretogo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class Log_in extends AppCompatActivity {
@@ -17,7 +16,7 @@ public class Log_in extends AppCompatActivity {
         txt_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent GoToSignUpPage=new Intent(Log_in.this,Sign_Up.class);
+                Intent GoToSignUpPage = new Intent(Log_in.this, Home.class);
                 startActivity(GoToSignUpPage);
             }
         });
