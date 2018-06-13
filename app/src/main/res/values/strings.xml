@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">WhereToGo</string>
+    <!--Login Page-->
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="login">Log in</string>
+    <string name="forgotten">Forgotten Password</string>
+    <string name="signup">SignUp</string>
+
+
+    <!-- SignUp Page-->
+    <string name="personal_name">Personal Name</string>
+    <string name="username">User Name</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="confirm_pass">Confirm Password</string>
+
+
+    <!-- UserProfile Page-->
+    <string name="page_profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+
+    <!-- UserProfile Menu-->
+    <string name="edit">Edit</string>
+</resources>
