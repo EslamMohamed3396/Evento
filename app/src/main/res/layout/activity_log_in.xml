@@ -45,7 +45,6 @@
             android:hint="@string/pass"
             android:drawableEnd="@drawable/ic_action_key" />
     </LinearLayout>
-
     <Button
         android:id="@+id/btn_log_in"
         style="@style/style_button_login"
