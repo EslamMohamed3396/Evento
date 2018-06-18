@@ -3,7 +3,7 @@
     <!--Login Page-->
     <string name="email">Email</string>
     <string name="pass">Password</string>
-    <string name="login">Log in</string>
+    <string name="login">Login</string>
     <string name="forgotten">Forgotten Password</string>
     <string name="signup">SignUp</string>
 

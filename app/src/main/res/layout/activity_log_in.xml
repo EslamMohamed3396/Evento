@@ -55,6 +55,7 @@
         style="@style/style_button_login"
         android:layout_width="match_parent"
         android:text="@string/login"
+        android:textAllCaps="true"
         android:textColor="@color/white" />
 
     <TextView
@@ -62,21 +63,23 @@
         style="@style/style_texts_in_login_page"
         android:layout_gravity="start"
         android:layout_marginBottom="@dimen/margin_or_padding_16"
-        android:layout_marginLeft="@dimen/margin_or_padding_16"
+        android:layout_marginStart="@dimen/margin_or_padding_16"
         android:text="@string/forgotten" />
 
 
     <view
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_marginLeft="@dimen/margin_or_padding_16"
-        android:layout_marginRight="@dimen/margin_or_padding_16" />
+        android:layout_marginRight="@dimen/margin_or_padding_16"
+        android:background="@color/dark_gray" />
 
     <Button
         android:id="@+id/btn_sign_up"
         style="@style/style_button_login"
         android:layout_width="match_parent"
         android:text="@string/signup"
+        android:textAllCaps="true"
         android:textColor="@color/white" />
 
 </LinearLayout>
