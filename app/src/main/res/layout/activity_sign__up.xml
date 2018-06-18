@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Sign_Up">
 
     <LinearLayout
@@ -17,29 +18,46 @@
             android:layout_gravity="center"
             android:contentDescription="@string/desc_photo"
             android:scaleType="centerCrop"
+            android:layout_margin="@dimen/margin_or_padding_16"
             android:src="@drawable/ic_account_circle" />
 
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:hint="@string/personal_name"
-            android:inputType="text" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/personal_name"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/username"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
 
         <EditText
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:hint="@string/username"
-            android:inputType="text" />
-
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
+            android:layout_marginBottom="@dimen/margin_or_padding_8"
+            android:layout_marginLeft="@dimen/margin_or_padding_16"
+            android:layout_marginRight="@dimen/margin_or_padding_16"
             android:hint="@string/phone"
             android:inputType="numberDecimal" />
 
@@ -61,13 +79,20 @@
                 android:layout_margin="@dimen/margin_or_padding_16" />
         </LinearLayout>
 
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:hint="@string/address"
-            android:inputType="text" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/address"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
 
         <Spinner
             android:id="@+id/sp_gender"
@@ -76,36 +101,62 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/margin_or_padding_16" />
 
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:hint="@string/pass"
-            android:inputType="textPassword" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:layout_width="300dp"
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:hint="@string/confirm_pass"
-            android:inputType="textPassword" />
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/confirm_pass"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_sign_up"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_sign_up_two"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/margin_or_padding_16"
+            android:layout_marginBottom="@dimen/margin_or_padding_16"
+            android:layout_marginLeft="@dimen/margin_or_padding_16"
+            android:layout_marginRight="@dimen/margin_or_padding_16"
+            android:textColor="@color/white"
             android:background="@drawable/custom_button"
             android:text="@string/signup" />
     </LinearLayout>
