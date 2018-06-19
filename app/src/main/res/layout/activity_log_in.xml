@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Log_in">
@@ -17,14 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/ed_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:layout_margin="@dimen/margin_or_padding_16"
-            android:inputType="textEmailAddress"
-            android:maxLines="1" />
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_or_padding_16"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
 
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
@@ -33,23 +33,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true">
 
-        <EditText
-            android:id="@+id/ed_password"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/pass"
-            android:layout_margin="@dimen/margin_or_padding_16"
-            android:maxLines="1" />
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_or_padding_16"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:maxLines="1" />
 
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_log_in"
         style="@style/style_button_login"
@@ -66,8 +66,7 @@
         android:layout_marginStart="@dimen/margin_or_padding_16"
         android:text="@string/forgotten" />
 
-
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginLeft="@dimen/margin_or_padding_16"

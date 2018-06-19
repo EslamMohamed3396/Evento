@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class Log_in extends AppCompatActivity {
+
     private Button btn_signup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
