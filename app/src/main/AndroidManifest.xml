@@ -26,10 +26,7 @@
         <activity
             android:name=".User_Profile"
             android:label="@string/page_profile" />
-        <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Bottom_Bar" />
     </application>
 
 </manifest>

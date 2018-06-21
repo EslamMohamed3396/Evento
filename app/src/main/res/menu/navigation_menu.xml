@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/my_events"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/baseline_insert_invitation_black_18dp"
+        android:title="@string/event"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/my_communities"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/baseline_account_balance_black_18dp"
+        android:title="@string/community"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/search"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/search"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+</menu>

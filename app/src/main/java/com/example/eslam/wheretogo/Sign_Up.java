@@ -54,7 +54,7 @@ public class Sign_Up extends AppCompatActivity {
         btn_sign_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent GoToSignUpPageTwo = new Intent(Sign_Up.this, Home.class);
+                Intent GoToSignUpPageTwo = new Intent(Sign_Up.this, Bottom_Bar.class);
                 startActivity(GoToSignUpPageTwo);
             }
         });

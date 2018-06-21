@@ -27,17 +27,12 @@
     <!-- Photo Description In Page User_Profile-->
     <string name="desc_photo">This is User Profile Picture</string>
 
-    <!--Navigation Drawer-->
-    <string name="title_activity_home">Home</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-
-    <!--Photo Description In Page Home-->
+    <!--Navigation Bottom Menu-->
+    <string name="home">Home</string>
+    <string name="event">My Events</string>
+    <string name="community">My communities</string>
+    <string name="search">search</string>
+    <!--Photo Description In Page Bottom_Bar-->
     <string name="desc_photo_event">This is Event Picture</string>
     <string name="city">City :</string>
     <string name="gender">Gender :</string>
