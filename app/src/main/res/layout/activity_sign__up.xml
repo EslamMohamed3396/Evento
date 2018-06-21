@@ -67,21 +67,37 @@
             android:inputType="numberDecimal" />
         </android.support.design.widget.TextInputLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/sp_country"
+            <!--<Spinner-->
+            <!--android:id="@+id/sp_country"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/margin_or_padding_16" />-->
+
+            <TextView
+                android:id="@+id/City_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_or_padding_16" />
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="@dimen/margin_or_padding_16"
+                android:text="@string/city"
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/sp_city"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_or_padding_16" />
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_or_padding_16"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:layout_toRightOf="@id/City_tx" />
+
         </LinearLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -100,12 +116,29 @@
                 android:maxLines="1" />
         </android.support.design.widget.TextInputLayout>
 
-        <Spinner
-            android:id="@+id/sp_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/margin_or_padding_16" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gender_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="2dp"
+                android:text="@string/gender"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_or_padding_16"
+                android:layout_marginLeft="@dimen/margin_or_padding_8"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:layout_toRightOf="@id/gender_tx"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

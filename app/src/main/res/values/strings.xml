@@ -19,7 +19,6 @@
     <!-- UserProfile Page-->
     <string name="page_profile">Profile</string>
     <string name="name">Name</string>
-    <string name="gender">Gender</string>
 
     <!-- UserProfile Menu-->
     <string name="edit">Edit</string>
@@ -40,4 +39,6 @@
 
     <!--Photo Description In Page Home-->
     <string name="desc_photo_event">This is Event Picture</string>
+    <string name="city">City :</string>
+    <string name="gender">Gender :</string>
 </resources>
