@@ -77,6 +77,7 @@ public class Sign_Up extends AppCompatActivity {
                         android.R.layout.simple_spinner_item, text1);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin.setAdapter(adapter1);
+
     }
 
 
