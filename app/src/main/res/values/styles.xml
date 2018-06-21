@@ -12,8 +12,9 @@
     <style name="style_button_login">
         <item name="android:layout_height">wrap_content</item>
         <!--<item name="android:layout_width">200dp</item>-->
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_margin">@dimen/margin_or_padding_16</item>
         <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textAllCaps">true</item>
     </style>
     <!--style_all_texts_in_login_page-->
     <style name="style_texts_in_login_page">
