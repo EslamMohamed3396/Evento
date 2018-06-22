@@ -21,7 +21,7 @@ public class Log_in extends AppCompatActivity {
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent GoToSignUpPage = new Intent(Log_in.this, Sign_Up.class);
+                Intent GoToSignUpPage = new Intent(Log_in.this, Bottom_Bar.class);
                 startActivity(GoToSignUpPage);
                 finish();
             }
