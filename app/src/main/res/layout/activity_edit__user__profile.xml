@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Sign_Up">
+    android:padding="@dimen/margin_or_padding_16"
+    tools:context=".Edit_User_Profile">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
@@ -18,7 +19,7 @@
             android:gravity="center">
 
             <com.mikhaellopez.circularimageview.CircularImageView
-                android:id="@+id/im_profile_signup"
+                android:id="@+id/im_profile_edit"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_margin="@dimen/margin_or_padding_8"
@@ -30,6 +31,7 @@
                 app:civ_shadow_color="#000000"
                 app:civ_shadow_radius="1" />
         </LinearLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -57,75 +59,11 @@
                 android:layout_marginBottom="@dimen/margin_or_padding_8"
                 android:layout_marginLeft="@dimen/margin_or_padding_16"
                 android:layout_marginRight="@dimen/margin_or_padding_16"
-                android:hint="@string/username"
-                android:inputType="text"
-                android:maxLines="1" />
+                android:hint="@string/phone"
+                android:inputType="numberDecimal" />
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/margin_or_padding_8"
-            android:layout_marginLeft="@dimen/margin_or_padding_16"
-            android:layout_marginRight="@dimen/margin_or_padding_16"
-            android:hint="@string/phone"
-            android:inputType="numberDecimal" />
-        </android.support.design.widget.TextInputLayout>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <!--<Spinner-->
-            <!--android:id="@+id/sp_country"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="@dimen/margin_or_padding_16" />-->
-
-            <TextView
-                android:id="@+id/City_tx"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_or_padding_8"
-                android:layout_marginLeft="@dimen/margin_or_padding_16"
-                android:layout_marginTop="@dimen/margin_or_padding_16"
-                android:text="@string/city"
-                android:textStyle="bold" />
-
-            <Spinner
-                android:id="@+id/sp_city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/margin_or_padding_16"
-                android:layout_marginBottom="@dimen/margin_or_padding_8"
-                android:layout_marginRight="@dimen/margin_or_padding_16"
-                android:layout_toRightOf="@id/City_tx" />
-
-        </LinearLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/margin_or_padding_8"
-                android:layout_marginLeft="@dimen/margin_or_padding_16"
-                android:layout_marginRight="@dimen/margin_or_padding_16"
-                android:hint="@string/address"
-                android:inputType="text"
-                android:maxLines="1" />
-        </android.support.design.widget.TextInputLayout>
-
-        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -147,7 +85,7 @@
                 android:layout_marginRight="@dimen/margin_or_padding_16"
                 android:layout_toRightOf="@id/gender_tx"
                 android:spinnerMode="dropdown" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -200,15 +138,15 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_sign_up_two"
+            android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/margin_or_padding_16"
             android:layout_marginLeft="@dimen/margin_or_padding_16"
             android:layout_marginRight="@dimen/margin_or_padding_16"
-            android:textColor="@color/white"
             android:background="@drawable/custom_button"
-            android:text="@string/signup" />
+            android:text="@string/save"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

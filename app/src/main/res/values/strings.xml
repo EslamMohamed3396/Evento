@@ -14,6 +14,8 @@
     <string name="phone">Phone</string>
     <string name="address">Address</string>
     <string name="confirm_pass">Confirm Password</string>
+    <string name="city">City :</string>
+    <string name="gender">Gender :</string>
 
 
     <!-- UserProfile Page-->
@@ -32,8 +34,11 @@
     <string name="event">My Events</string>
     <string name="community">My communities</string>
     <string name="search">search</string>
+
     <!--Photo Description In Page Bottom_Bar-->
     <string name="desc_photo_event">This is Event Picture</string>
-    <string name="city">City :</string>
-    <string name="gender">Gender :</string>
+
+
+    <!--Edit User Profile-->
+    <string name="save">Save</string>
 </resources>

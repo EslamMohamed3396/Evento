@@ -16,7 +16,7 @@ public class Log_in extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        btn_log_in = (Button) findViewById(R.id.btn_sign_up);
+        btn_log_in = (Button) findViewById(R.id.btn_log_in);
         btn_log_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,13 +26,12 @@ public class Log_in extends AppCompatActivity {
             }
         });
 
-        btn_signup = (Button) findViewById(R.id.btn_log_in);
+        btn_signup = (Button) findViewById(R.id.btn_sign_up);
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent GoToSignUpPage = new Intent(Log_in.this, Sign_Up.class);
                 startActivity(GoToSignUpPage);
-                finish();
             }
         });
     }
