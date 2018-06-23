@@ -37,6 +37,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/ed_pesonal_name_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -53,6 +54,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/ed_phone_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -68,7 +70,6 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/gender_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_or_padding_16"
@@ -77,7 +78,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner_Gender"
+                android:id="@+id/sp_Gender_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_or_padding_16"
@@ -92,6 +93,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/ed_email_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -102,6 +104,23 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1" />
         </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/ed_oldpass_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/older_pass"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -109,6 +128,7 @@
             app:passwordToggleEnabled="true">
 
             <EditText
+                android:id="@+id/ed_newpass_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -126,6 +146,7 @@
             app:passwordToggleEnabled="true">
 
             <EditText
+                android:id="@+id/ed_confirm_pass_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -139,7 +160,7 @@
 
         <Button
             android:id="@+id/btn_save"
-            android:layout_width="match_parent"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/margin_or_padding_16"

@@ -31,9 +31,12 @@
             android:parentActivityName=".Log_in" />
         <activity
             android:name=".User_Profile"
-            android:label="@string/page_profile" />
+            android:label="@string/page_profile"
+            android:parentActivityName=".Bottom_Bar" />
         <activity android:name=".Bottom_Bar" />
-        <activity android:name=".Edit_User_Profile" />
+        <activity
+            android:name=".Edit_User_Profile"
+            android:parentActivityName=".User_Profile" />
 
     </application>
 

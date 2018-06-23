@@ -50,33 +50,31 @@
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_log_in"
-        style="@style/style_button_login"
-        android:layout_width="match_parent"
-        android:text="@string/login"
-        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/btn_log_in"
+            style="@style/style_button_login"
+            android:layout_width="130dp"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            style="@style/style_button_login"
+            android:layout_width="130dp"
+            android:text="@string/signup"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
     <TextView
         android:id="@+id/txt_forgotten_pass"
         style="@style/style_texts_in_login_page"
         android:layout_gravity="start"
+        android:layout_marginTop="@dimen/margin_or_padding_16"
         android:layout_marginBottom="@dimen/margin_or_padding_16"
         android:layout_marginStart="@dimen/margin_or_padding_16"
         android:text="@string/forgotten" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="@dimen/margin_or_padding_16"
-        android:layout_marginRight="@dimen/margin_or_padding_16"
-        android:background="@color/dark_gray" />
-
-    <Button
-        android:id="@+id/btn_sign_up"
-        style="@style/style_button_login"
-        android:layout_width="match_parent"
-        android:text="@string/signup"
-        android:textColor="@color/white" />
-
 </LinearLayout>

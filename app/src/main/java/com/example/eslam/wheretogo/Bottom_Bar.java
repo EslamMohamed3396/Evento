@@ -3,10 +3,11 @@ package com.example.eslam.wheretogo;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 
 public class Bottom_Bar extends AppCompatActivity {
@@ -16,7 +17,7 @@ public class Bottom_Bar extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                public boolean onNavigationItemSelected(MenuItem item) {
                     int id = item.getItemId();
                     switch (id) {
                         case R.id.home:
@@ -56,5 +57,26 @@ public class Bottom_Bar extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frame, mFragment);
         transaction.commit();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.home_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.menu_profile:
+                Intent intent = new Intent(Bottom_Bar.this, User_Profile.class);
+                startActivity(intent);
+                return true;
+            case R.id.menu_logout:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

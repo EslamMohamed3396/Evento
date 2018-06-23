@@ -41,11 +41,15 @@
 
     <!--Edit User Profile-->
     <string name="save">Save</string>
+    <string name="older_pass">Older Password</string>
 
-    <!--Log in Class-->
+    <!--Invalid-->
     <string name="invalidEmail">Invalid Email</string>
     <string name="invalidPassword">Invalid Password,The Password Should be Greater Than 6 Numbers</string>
+    <string name="invalidPhone">Invalid Name</string>
+    <string name="invalidName">Invalid Phone</string>
 
     <!--Splash Screen-->
     <string name="desc_photo_splash_screen">This Photo To Splash Screen</string>
+    <string name="log_out">Log out</string>
 </resources>
