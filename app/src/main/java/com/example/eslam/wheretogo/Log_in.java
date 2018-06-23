@@ -42,7 +42,7 @@ public class Log_in extends AppCompatActivity {
     }
 
     private void login() {
-        if (validEmail(mEmail.getText().toString()) && validPassword(mPassword.getText().toString())) {
+        if (validEmail(mEmail.getText().toString().toLowerCase()) && validPassword(mPassword.getText().toString().toLowerCase())) {
             Intent GoToHomePage = new Intent(Log_in.this, Bottom_Bar.class);
             startActivity(GoToHomePage);
             //  finish();
