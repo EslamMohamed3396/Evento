@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WhereToGo</string>
+    <string name="app_name">Evento</string>
     <!--Login Page-->
     <string name="email">Email</string>
     <string name="pass">Password</string>
@@ -41,4 +41,11 @@
 
     <!--Edit User Profile-->
     <string name="save">Save</string>
+
+    <!--Log in Class-->
+    <string name="invalidEmail">Invalid Email</string>
+    <string name="invalidPassword">Invalid Password,The Password Should be Greater Than 6 Numbers</string>
+
+    <!--Splash Screen-->
+    <string name="desc_photo_splash_screen">This Photo To Splash Screen</string>
 </resources>
