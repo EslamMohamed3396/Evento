@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="890dp"
+    android:padding="@dimen/margin_or_padding_8"
+    tools:context=".Edit_User_Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/margin_or_padding_8"
+            android:gravity="center">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/im_profile_edit"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="@dimen/margin_or_padding_8"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"
+                app:civ_border_color="#1e0303"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#000000"
+                app:civ_shadow_radius="1" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_pesonal_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/personal_name"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/phone"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_8"
+                android:layout_marginTop="2dp"
+                android:text="@string/gender"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_Gender_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_or_padding_16"
+                android:layout_marginLeft="@dimen/margin_or_padding_8"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:layout_toRightOf="@id/gender_tx"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/ed_oldpass_edit"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/older_pass"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/ed_newpass_edit"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/ed_confirm_pass_edit"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/confirm_pass"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_or_padding_16"
+            android:layout_marginLeft="@dimen/margin_or_padding_16"
+            android:layout_marginRight="@dimen/margin_or_padding_16"
+            android:background="@drawable/custom_button"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
