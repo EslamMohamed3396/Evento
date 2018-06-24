@@ -13,7 +13,6 @@ import android.view.MenuItem;
 public class Bottom_Bar extends AppCompatActivity {
     private Fragment mFragment = null;
     private BottomNavigationView mNavigationView;
-
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

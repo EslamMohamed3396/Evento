@@ -52,4 +52,7 @@
     <!--Splash Screen-->
     <string name="desc_photo_splash_screen">This Photo To Splash Screen</string>
     <string name="log_out">Log out</string>
+
+    <!--item Community-->
+    <string name="join_us">Join Us</string>
 </resources>

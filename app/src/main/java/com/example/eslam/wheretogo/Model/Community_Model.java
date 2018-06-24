@@ -1,10 +1,10 @@
 package com.example.eslam.wheretogo.Model;
 
-public class Event_Model {
+public class Community_Model {
     private String mDescreption;
     private int mImage;
 
-    public Event_Model(String mDescreption, int mImage) {
+    public Community_Model(String mDescreption, int mImage) {
         this.mDescreption = mDescreption;
         this.mImage = mImage;
     }
