@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/margin_or_padding_10"
+        android:layout_marginBottom="@dimen/margin_or_padding_16"
         android:text="make your event a memory"
         android:textAllCaps="true"
         android:textColor="@color/white"

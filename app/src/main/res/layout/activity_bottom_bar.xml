@@ -10,7 +10,7 @@
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="450dp"></FrameLayout>
+        android:layout_height="450dp" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation_bottom"
