@@ -45,9 +45,13 @@
 
     <!--Invalid-->
     <string name="invalidEmail">Invalid Email</string>
+    <string name="invalid">Required</string>
     <string name="invalidPassword">Invalid Password,The Password Should be Greater Than 6 Numbers</string>
-    <string name="invalidPhone">Invalid Name</string>
-    <string name="invalidName">Invalid Phone</string>
+    <string name="invalidConfirmPassword">Not matched the Password</string>
+    <string name="invalidPhone">Invalid Phone</string>
+    <string name="invalidAddress">Invalid Address,Should be Greater Than 10 character,character and Number only</string>
+    <string name="invalidPersonName">Invalid Name,Should be character only </string>
+    <string name="invalidName">Invalid Name</string>
 
     <!--Splash Screen-->
     <string name="desc_photo_splash_screen">This Photo To Splash Screen</string>
