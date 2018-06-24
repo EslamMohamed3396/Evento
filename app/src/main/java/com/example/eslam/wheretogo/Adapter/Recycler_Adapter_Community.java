@@ -8,13 +8,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eslam.wheretogo.Adapter.Recycler_Adapter_Community.ItemViewHolder;
 import com.example.eslam.wheretogo.Model.Community_Model;
 import com.example.eslam.wheretogo.R;
 
 import java.util.List;
 
-public class Recycler_Adapter_Community extends RecyclerView.Adapter<Recycler_Adapter_Community.ItemViewHolder> {
+public class Recycler_Adapter_Community extends RecyclerView.Adapter<ItemViewHolder> {
     private List<Community_Model> community_models;
+    //  public final CommunityOnClick communityOnClick;
     private Context context;
 
     public Recycler_Adapter_Community(Context context, List<Community_Model> community_models) {
@@ -25,8 +27,12 @@ public class Recycler_Adapter_Community extends RecyclerView.Adapter<Recycler_Ad
     @Override
     public Recycler_Adapter_Community.ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_community, parent, false);
-        Recycler_Adapter_Community.ItemViewHolder itemViewHolder = new Recycler_Adapter_Community.ItemViewHolder(view);
+        ItemViewHolder itemViewHolder = new ItemViewHolder(view);
         return itemViewHolder;
+    }
+
+    public interface CommunityOnClick {
+        void OnClick(Community_Model community_model);
     }
 
     @Override
@@ -44,7 +50,7 @@ public class Recycler_Adapter_Community extends RecyclerView.Adapter<Recycler_Ad
         return community_models.size();
     }
 
-    class ItemViewHolder extends RecyclerView.ViewHolder {
+    class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView tv_desc;
         ImageView im_event;
 
@@ -52,7 +58,14 @@ public class Recycler_Adapter_Community extends RecyclerView.Adapter<Recycler_Ad
             super(itemView);
             tv_desc = (TextView) itemView.findViewById(R.id.tv_description_community);
             im_event = (ImageView) itemView.findViewById(R.id.im_community);
+            itemView.setOnClickListener(this);
         }
 
+        @Override
+        public void onClick(View view) {
+           /* int adpdterPostion = getAdapterPosition();
+            Community_Model community_model = community_models.get(adpdterPostion);
+            communityOnClick.OnClick(community_model);*/
+        }
     }
 }

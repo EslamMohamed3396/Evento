@@ -22,7 +22,6 @@ public class Community_Fragment extends Fragment {
 
     private Recycler_Adapter_Community adapter_community;
     private RecyclerView recyclerView;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -31,18 +30,10 @@ public class Community_Fragment extends Fragment {
 
         List<Community_Model> community_models = new ArrayList<>();
 
-        community_models.add(new Community_Model("The objective of the Football Match Event Database (FMED) is to create a schema that maintains the individual micro events within a football match that lead to its macro events in order to support football research activities for the benefit of analysts, clubs, league organizations, media organizations, and other members of the football industry", R.drawable.football));
-        community_models.add(new Community_Model("Cairo Runners is the first street running initiative in Cairo, providing Cairenes with exhilarating mini marathon experience every Friday morning. Let's Join With Us", R.drawable.cairo));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        community_models.add(new Community_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-
+        community_models.add(new Community_Model("Giza Football", R.drawable.football));
+        community_models.add(new Community_Model("Cairo Runners", R.drawable.cairo));
+        community_models.add(new Community_Model("GDG Cairo", R.drawable.udacity));
+        community_models.add(new Community_Model("Cairo Movie Club", R.drawable.cairo_movie));
 
         adapter_community = new Recycler_Adapter_Community(getActivity(), community_models);
 
@@ -54,4 +45,5 @@ public class Community_Fragment extends Fragment {
 
         return rootView;
     }
+
 }

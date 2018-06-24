@@ -31,8 +31,8 @@
 
     <!--Navigation Bottom Menu-->
     <string name="home">Home</string>
-    <string name="event">My Events</string>
-    <string name="community">My communities</string>
+    <string name="event">Events</string>
+    <string name="community">communities</string>
     <string name="search">search</string>
 
     <!--Photo Description In Page Bottom_Bar-->

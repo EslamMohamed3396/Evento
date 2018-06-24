@@ -19,6 +19,7 @@ public class Event_Fragment extends Fragment {
     public Event_Fragment() {
     }
 
+    Event_Fragment context = Event_Fragment.this;
     private Recycler_Adapter_Event adapter_event;
     private RecyclerView recyclerView;
 
@@ -32,17 +33,8 @@ public class Event_Fragment extends Fragment {
 
         List<Event_Model> event_models = new ArrayList<>();
 
-        event_models.add(new Event_Model("The objective of the Football Match Event Database (FMED) is to create a schema that maintains the individual micro events within a football match that lead to its macro events in order to support football research activities for the benefit of analysts, clubs, league organizations, media organizations, and other members of the football industry", R.drawable.football));
+        event_models.add(new Event_Model("The objective of the Football Match Event Database (FMED) is to create a schema that maintains the individual micro events within a football match that lead to its macro events in order to support football research activities for the benefit of analysts, clubs, league organizations", R.drawable.football));
         event_models.add(new Event_Model("Cairo Runners is the first street running initiative in Cairo, providing Cairenes with exhilarating mini marathon experience every Friday morning. Let's Join With Us", R.drawable.cairo));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
-        event_models.add(new Event_Model("This is funny Yaaaaaaaay", R.drawable.ime));
 
 
         adapter_event = new Recycler_Adapter_Event(getActivity(), event_models);

@@ -19,7 +19,7 @@
             android:layout_height="96dp"
             android:layout_margin="@dimen/margin_or_padding_8"
             android:scaleType="centerCrop"
-            android:src="@drawable/ime"
+            android:src="@drawable/user"
             app:civ_border_color="#1e0303"
             app:civ_border_width="2dp"
             app:civ_shadow="true"
