@@ -6,13 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Log_in extends AppCompatActivity {
 
-    private Button btn_signup;
+    private TextView btn_signup;
     private Button btn_log_in;
     private EditText mEmail;
     private EditText mPassword;
@@ -31,7 +32,7 @@ public class Log_in extends AppCompatActivity {
             }
         });
 
-        btn_signup = (Button) findViewById(R.id.btn_sign_up);
+        btn_signup = (TextView) findViewById(R.id.to_sign_up);
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

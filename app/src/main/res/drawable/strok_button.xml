@@ -11,8 +11,7 @@
         android:right="7dp"
         android:top="7dp" />
 
-    <gradient
-        android:angle="45"
-        android:endColor="@color/orange"
-        android:startColor="@color/orange" />
+    <stroke
+        android:width="4dp"
+        android:color="@color/orange" />
 </shape>

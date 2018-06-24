@@ -37,7 +37,10 @@
         <activity
             android:name=".Edit_User_Profile"
             android:parentActivityName=".User_Profile" />
-
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
