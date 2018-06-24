@@ -9,6 +9,7 @@ import java.util.List;
 public class Loader extends AsyncTaskLoader<List<Object>> {
     private String mUrl;
 
+
     public Loader(Context context, String mUrl) {
         super(context);
         mUrl = mUrl;
