@@ -141,11 +141,20 @@
                 android:text="@string/signup"
                 android:textColor="@color/white" />
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_signUp_2"
-                android:textSize="@dimen/text_size_18" />
+                android:layout_height="150dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
+                    android:text="@string/tv_sign_up1"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
