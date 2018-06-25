@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_or_padding_16"
+    tools:context=".Edit_User_Profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_or_padding_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="2dp"
+                android:text="@string/Event_Topic"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_or_padding_16"
+                android:layout_marginLeft="@dimen/margin_or_padding_8"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:layout_toRightOf="@id/gender_tx"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/margin_or_padding_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="2dp"
+                android:text="@string/Event_Type"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_or_padding_16"
+                android:layout_marginLeft="@dimen/margin_or_padding_8"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:layout_toRightOf="@id/gender_tx"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin_or_padding_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="2dp"
+                android:text="@string/Event_Start_Date"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/ed_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/Choose_Start_Date"
+                android:inputType="date"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin_or_padding_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="2dp"
+                android:text="@string/Event_End_Date"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+                android:id="@+id/ed_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_or_padding_8"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:hint="@string/Choose_Start_Date"
+                android:inputType="date"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin_or_padding_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_or_padding_16"
+                android:layout_marginTop="2dp"
+                android:text="@string/Listing_of_Event"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_Listing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_or_padding_16"
+                android:layout_marginLeft="@dimen/margin_or_padding_8"
+                android:layout_marginRight="@dimen/margin_or_padding_16"
+                android:layout_toRightOf="@id/gender_tx"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_or_padding_16"
+            android:layout_marginLeft="@dimen/margin_or_padding_16"
+            android:layout_marginRight="@dimen/margin_or_padding_16"
+            android:background="@drawable/custom_button"
+            android:text="@string/Create_Event"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

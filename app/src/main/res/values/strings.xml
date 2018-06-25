@@ -6,6 +6,24 @@
     <string name="login">Login</string>
     <string name="forgotten">Forgotten Password?</string>
     <string name="signup">SignUp</string>
+    <string name="Add_Event">Add_Event</string>
+    <string name="Add_community">Add_Community</string>
+
+
+    <!-- Create Event Page-->
+    <string name="Create_new_Event">Create new Event</string>
+    <string name="Event_Location">Location</string>
+    <string name="Event_Topic">Choose topic</string>
+    <string name="Event_Type">Choose type</string>
+    <string name="Event_Description">Description</string>
+    <string name="Event_Start_Date">Start date</string>
+    <string name="Choose_Start_Date">write date</string>
+    <string name="Event_End_Date">End date</string>
+    <string name="Next_Page">Next</string>
+    <string name="Create_Event">Create</string>
+    <string name="Listing_of_Event">Event Listing </string>
+    <string name="Listing">Choose Listing</string>
+    <string name="Choose_Image_Event">Choose Image</string>
 
 
     <!-- SignUp Page-->
@@ -34,6 +52,7 @@
     <string name="event">Events</string>
     <string name="community">communities</string>
     <string name="search">search</string>
+    <string name="add_Event_OR_Community">add</string>
 
     <!--Photo Description In Page Bottom_Bar-->
     <string name="desc_photo_event">This is Event Picture</string>

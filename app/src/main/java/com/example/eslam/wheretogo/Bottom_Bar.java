@@ -3,12 +3,15 @@ package com.example.eslam.wheretogo;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.PopupMenu;
 
 public class Bottom_Bar extends AppCompatActivity {
     private Fragment mFragment = null;
