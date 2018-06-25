@@ -32,11 +32,11 @@ public class Log_in extends AppCompatActivity {
             }
         });
 
-        btn_signup = (TextView) findViewById(R.id.to_sign_up);
+        btn_signup = (TextView) findViewById(R.id.tv_sign_up);
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent GoToSignUpPage = new Intent(Log_in.this, Sign_Up.class);
+                Intent GoToSignUpPage = new Intent(Log_in.this, Create_Community.class);
                 startActivity(GoToSignUpPage);
             }
         });
@@ -46,7 +46,7 @@ public class Log_in extends AppCompatActivity {
         if (validEmail(mEmail.getText().toString().toLowerCase()) && validPassword(mPassword.getText().toString().toLowerCase())) {
             Intent GoToHomePage = new Intent(Log_in.this, Bottom_Bar.class);
             startActivity(GoToHomePage);
-            //  finish();
+              finish();
 
         } else {
             if (!validEmail(mEmail.getText().toString())) {

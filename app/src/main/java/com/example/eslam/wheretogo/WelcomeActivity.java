@@ -13,7 +13,7 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.content_welcome);
 
         log_btn = (Button) findViewById(R.id.btn_log_in1);
         log_btn.setOnClickListener(new View.OnClickListener() {
