@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/navigation_bottom"
-            android:src="@drawable/baseline_account_balance_black_18dp"
+            android:src="@drawable/baseline_insert_invitation_black_18dp"
             fab:fab_label="@string/create_community"
             fab:fab_size="mini" />
     </com.github.clans.fab.FloatingActionMenu>

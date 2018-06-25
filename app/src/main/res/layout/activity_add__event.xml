@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_or_padding_16"
         android:orientation="vertical">
 
@@ -28,7 +28,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/Image_Event"
+                android:id="@+id/image_Event"
                 android:layout_width="75dp"
                 android:layout_height="215dp"
                 app:srcCompat="@drawable/baseline_account_balance_black_18dp"
@@ -50,7 +50,7 @@
                 android:layout_marginBottom="@dimen/margin_or_padding_8"
                 android:layout_marginLeft="@dimen/margin_or_padding_16"
                 android:layout_marginRight="@dimen/margin_or_padding_16"
-                android:hint="@string/Create_new_Event"
+                android:hint="@string/name"
                 android:inputType="text"
                 android:maxLines="1" />
         </android.support.design.widget.TextInputLayout>
