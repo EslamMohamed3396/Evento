@@ -16,7 +16,7 @@
     <string name="confirm_pass">Confirm Password</string>
     <string name="city">City :</string>
     <string name="gender">Gender :</string>
-
+    <string name="Next">Next</string>
 
     <!-- UserProfile Page-->
     <string name="page_profile">Profile</string>
@@ -61,4 +61,11 @@
     <string name="join_us">Join Us</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="not_a_member_sign_up">not a member? sign up</string>
+    <string name="make_your_event_a_memory">make your event a memory</string>
+    <string name="logo_photo">logo photo</string>
+
+    <!--Page Sign Up 1 & 2-->
+    <string name="title_activity_sign_up_two">Sign_up_two</string>
+    <string name="tv_signUp_2">Page 2 from 2</string>
+    <string name="tv_sign_up1">Page 1 From 2</string>
 </resources>

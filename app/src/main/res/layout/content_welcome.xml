@@ -28,8 +28,8 @@
             android:id="@+id/btn_sign_up1"
             style="@style/style_button_login"
             android:layout_width="match_parent"
-            android:layout_marginLeft="@dimen/margin_or_padding_8"
-            android:layout_marginRight="@dimen/margin_or_padding_16"
+            android:layout_marginEnd="@dimen/margin_or_padding_16"
+            android:layout_marginStart="@dimen/margin_or_padding_8"
             android:layout_weight="1"
             android:background="@drawable/strok_button"
             android:text="@string/signup"
@@ -42,10 +42,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/margin_or_padding_16"
-        android:text="make your event a memory"
+        android:layout_marginBottom="@dimen/margin_or_padding_10"
+        android:text="@string/make_your_event_a_memory"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
 </RelativeLayout>

@@ -40,6 +40,10 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sign_up_two"
+            android:label="@string/title_activity_sign_up_two"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

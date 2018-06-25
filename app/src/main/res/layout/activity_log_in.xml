@@ -11,6 +11,7 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:contentDescription="@string/logo_photo"
         android:src="@drawable/logo_slogan" />
 
     <LinearLayout
@@ -56,9 +57,6 @@
     </LinearLayout>
 
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
         <Button
             android:id="@+id/btn_log_in"
             style="@style/style_button_login"
@@ -83,7 +81,7 @@
             android:id="@+id/to_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginBottom="@dimen/margin_or_padding_16"
             android:layout_marginEnd="@dimen/margin_or_padding_16"
             android:layout_marginStart="@dimen/margin_or_padding_16"
