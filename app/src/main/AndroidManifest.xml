@@ -44,6 +44,12 @@
         <activity
             android:name=".add_event_1"
             android:parentActivityName=".Add_Event" />
+        <activity
+            android:name=".Add_Event"
+            android:parentActivityName=".Bottom_Bar" />
+        <activity
+            android:name=".Create_Community"
+            android:parentActivityName=".Bottom_Bar" />
     </application>
 
 </manifest>
