@@ -10,14 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="@dimen/margin_or_padding_16">
+        android:layout_margin="@dimen/margin_or_padding_16"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_margin="@dimen/margin_or_padding_8"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +76,7 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
->
+            android:layout_margin="@dimen/margin_or_padding_16">
 
             <EditText
                 android:id="@+id/ed_event_description"
@@ -86,8 +87,7 @@
                 android:layout_marginLeft="@dimen/margin_or_padding_16"
                 android:layout_marginRight="@dimen/margin_or_padding_16"
                 android:hint="@string/Event_Description"
-                android:inputType="textMultiLine"
-                 />
+                android:inputType="textMultiLine" />
 
         </android.support.design.widget.TextInputLayout>
 
