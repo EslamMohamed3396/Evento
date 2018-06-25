@@ -6,6 +6,24 @@
     <string name="login">Login</string>
     <string name="forgotten">Forgotten Password?</string>
     <string name="signup">SignUp</string>
+    <string name="Add_Event">Add_Event</string>
+    <string name="Add_community">Add_Community</string>
+
+
+    <!-- Create Event Page-->
+    <string name="Create_new_Event">Create new Event</string>
+    <string name="Event_Location">Location</string>
+    <string name="Event_Topic">Choose topic</string>
+    <string name="Event_Type">Choose type</string>
+    <string name="Event_Description">Description</string>
+    <string name="Event_Start_Date">Start date</string>
+    <string name="Choose_Start_Date">write date</string>
+    <string name="Event_End_Date">End date</string>
+    <string name="Next_Page">Next</string>
+    <string name="Create_Event">Create</string>
+    <string name="Listing_of_Event">Event Listing </string>
+    <string name="Listing">Choose Listing</string>
+    <string name="Choose_Image_Event">Choose Image</string>
 
 
     <!-- SignUp Page-->
@@ -16,7 +34,7 @@
     <string name="confirm_pass">Confirm Password</string>
     <string name="city">City :</string>
     <string name="gender">Gender :</string>
-
+    <string name="Next">Next</string>
 
     <!-- UserProfile Page-->
     <string name="page_profile">Profile</string>
@@ -34,6 +52,7 @@
     <string name="event">Events</string>
     <string name="community">communities</string>
     <string name="search">search</string>
+    <string name="add_Event_OR_Community">add</string>
 
     <!--Photo Description In Page Bottom_Bar-->
     <string name="desc_photo_event">This is Event Picture</string>
@@ -61,15 +80,11 @@
     <string name="join_us">Join Us</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="not_a_member_sign_up">not a member? sign up</string>
+    <string name="make_your_event_a_memory">make your event a memory</string>
+    <string name="logo_photo">logo photo</string>
 
-
-    <!--Create Community-->
-    <string name="name_community">Name</string>
-    <string name="desc_community">Description</string>
-    <string name="role_community">Role</string>
-    <string name="state_community">State</string>
-    <string name="create_community">Create</string>
-
-    <!--Welcome Activity-->
-    <string name="welcome">make your event a memory</string>
+    <!--Page Sign Up 1 & 2-->
+    <string name="title_activity_sign_up_two">Sign_up_two</string>
+    <string name="tv_signUp_2">Page 2 from 2</string>
+    <string name="tv_sign_up1">Page 1 From 2</string>
 </resources>
