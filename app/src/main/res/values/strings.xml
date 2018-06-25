@@ -83,8 +83,19 @@
     <string name="make_your_event_a_memory">make your event a memory</string>
     <string name="logo_photo">logo photo</string>
 
+    <!--create Community-->
+    <string name="name_community">Name</string>
+    <string name="desc_community">Description</string>
+    <string name="role_community">Role</string>
+    <string name="state_community">State</string>
+    <string name="create_community">Create</string>
+
     <!--Page Sign Up 1 & 2-->
     <string name="title_activity_sign_up_two">Sign_up_two</string>
     <string name="tv_signUp_2">Page 2 from 2</string>
     <string name="tv_sign_up1">Page 1 From 2</string>
+
+    <!--Welcome Page-->
+    <string name="welcome">Page 1 From 2</string>
+
 </resources>

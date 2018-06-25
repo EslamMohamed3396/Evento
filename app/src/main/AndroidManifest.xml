@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Splash_Screen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,8 +40,10 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".add_event_1"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".add_event_1"
+            android:parentActivityName=".Add_Event" />
     </application>
 
 </manifest>

@@ -43,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin_or_padding_16"
-        android:text="@string/welcome"
+        android:text="@string/make_your_event_a_memory"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="12sp" />
