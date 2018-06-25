@@ -20,6 +20,7 @@ public class Community_Fragment extends Fragment {
     public Community_Fragment() {
     }
 
+
     private Recycler_Adapter_Community adapter_community;
     private RecyclerView recyclerView;
     @Nullable
