@@ -66,14 +66,6 @@
             fab:fab_label="@string/Create_Event"
             fab:fab_size="mini" />
 
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_create_community"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/navigation_bottom"
-            android:src="@drawable/baseline_insert_invitation_black_18dp"
-            fab:fab_label="@string/create_community"
-            fab:fab_size="mini" />
     </com.github.clans.fab.FloatingActionMenu>
 
     <android.support.design.widget.BottomNavigationView

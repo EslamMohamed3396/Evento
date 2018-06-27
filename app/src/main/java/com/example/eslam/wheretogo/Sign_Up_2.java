@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Sign_up_two extends AppCompatActivity {
+public class Sign_Up_2 extends AppCompatActivity {
 
     private static final int GALLERY = 1;
     String[] mCittySpinner = {"Cairo", "Alexandria", "Giza", "Port Said", "Suez", "Mansoura", "Tanta", "Ismailia", "Zagazig", "Damietta", "Aswan", "Minya", "Beni Suef", "Sohag"};
@@ -40,21 +40,32 @@ public class Sign_up_two extends AppCompatActivity {
 
             };
     private CircularImageView circleImageView;
-    private Button mSignUp;
+    private Button mSignUp, mBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_sign_up_two);
+        setContentView(R.layout.activity_sign__up_2);
+
         mPersonName = (EditText) findViewById(R.id.ed_person_name);
         mPhone = (EditText) findViewById(R.id.ed_phone);
         mAddress = (EditText) findViewById(R.id.ed_address);
         circleImageView = (CircularImageView) findViewById(R.id.im_profile_signup);
-        mSignUp = (Button) findViewById(R.id.btn_sign_up2);
+        mBack = (Button) findViewById(R.id.btn_back_sign_up_one);
+        mSignUp = (Button) findViewById(R.id.btn_sign_up);
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent BackToSignUpPageOne = new Intent(Sign_Up_2.this, Sign_Up.class);
+                startActivity(BackToSignUpPageOne);
+            }
+        });
+
         mSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cheackInformation();
+                checkInformation();
             }
         });
         circleImageView.setOnClickListener(new View.OnClickListener() {
@@ -65,15 +76,13 @@ public class Sign_up_two extends AppCompatActivity {
         });
         spinner = (Spinner) findViewById(R.id.sp_city);
         spinner.setOnItemSelectedListener(onItemSelectedListener);
-
         fillTheSpinner();
     }
 
-    private void cheackInformation() {
-        if (ValidPersonName() &&
-                ValidPhone() && ValidAddress()) {
-            Intent GoToLoginPageTwo = new Intent(Sign_up_two.this, Log_in.class);
-            startActivity(GoToLoginPageTwo);
+    private void checkInformation() {
+        if (ValidPersonName() && ValidPhone() && ValidAddress()) {
+            Intent GoToHomePageTwo = new Intent(Sign_Up_2.this, Bottom_Bar.class);
+            startActivity(GoToHomePageTwo);
         }
 
 
@@ -121,7 +130,7 @@ public class Sign_up_two extends AppCompatActivity {
     public void fillTheSpinner() {
 
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(Sign_up_two.this,
+                new ArrayAdapter<String>(Sign_Up_2.this,
                         android.R.layout.simple_spinner_item, mCittySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -152,9 +161,6 @@ public class Sign_up_two extends AppCompatActivity {
                 }
             }
         }
+
     }
-
 }
-
-
-

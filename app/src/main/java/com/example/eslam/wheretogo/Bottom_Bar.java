@@ -18,7 +18,6 @@ import com.github.clans.fab.FloatingActionMenu;
 public class Bottom_Bar extends AppCompatActivity {
     private FloatingActionMenu actionMenu;
     private FloatingActionButton actionButtonEvent;
-    private FloatingActionButton actionButtoncommunity;
     private Fragment mFragment = null;
     private BottomNavigationView mNavigationView;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
@@ -33,10 +32,6 @@ public class Bottom_Bar extends AppCompatActivity {
                             return true;
                         case R.id.my_events:
                             mFragment = new Event_Fragment();
-                            setFragment(mFragment);
-                            return true;
-                        case R.id.my_communities:
-                            mFragment = new Community_Fragment();
                             setFragment(mFragment);
                             return true;
                         case R.id.search:
@@ -59,18 +54,10 @@ public class Bottom_Bar extends AppCompatActivity {
         mNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         actionMenu = (FloatingActionMenu) findViewById(R.id.fab_menu);
         actionButtonEvent = (FloatingActionButton) findViewById(R.id.fab_create_event);
-        actionButtoncommunity = (FloatingActionButton) findViewById(R.id.fab_create_community);
         actionButtonEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Bottom_Bar.this, Add_Event.class);
-                startActivity(intent);
-            }
-        });
-        actionButtoncommunity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Bottom_Bar.this, Create_Community.class);
                 startActivity(intent);
             }
         });
