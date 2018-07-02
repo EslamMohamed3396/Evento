@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,9 @@ public class Bottom_Bar extends AppCompatActivity {
     private FloatingActionButton actionButtonEvent;
     private Fragment mFragment = null;
     private BottomNavigationView mNavigationView;
+    private SharedPreferences mPref;
+    private SharedPreferences.Editor mEditor;
+    public static final String PREFERENCES_ACCOUNT = "Prefs_Account";
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
@@ -76,6 +80,16 @@ public class Bottom_Bar extends AppCompatActivity {
         return true;
     }
 
+    private void Logout() {
+        mPref = getSharedPreferences(PREFERENCES_ACCOUNT, MODE_PRIVATE);
+        mEditor = mPref.edit();
+        mEditor.clear();
+        mEditor.commit();
+        Intent intent = new Intent(Bottom_Bar.this, Log_in.class);
+        startActivity(intent);
+        finish();
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -85,7 +99,7 @@ public class Bottom_Bar extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.menu_logout:
-                finish();
+                Logout();
                 return true;
         }
         return super.onOptionsItemSelected(item);

@@ -93,7 +93,7 @@ public class Edit_User_Profile extends AppCompatActivity {
                 && validPassword(confirm_pass)) {
             Intent GoToHomePage = new Intent(Edit_User_Profile.this, User_Profile.class);
             startActivity(GoToHomePage);
-            //  finish();
+              finish();
 
         } else {
             if (!validName(name)) {

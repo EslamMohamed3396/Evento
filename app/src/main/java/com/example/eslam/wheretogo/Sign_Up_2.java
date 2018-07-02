@@ -90,7 +90,8 @@ public class Sign_Up_2 extends AppCompatActivity {
 
     private boolean ValidPhone() {
         String valid_Phone = "(010|011|012|015)(\\s*-?\\d){8}";
-        Matcher matcher_phone = Pattern.compile(valid_Phone).matcher(mPhone.getText().toString());
+        String phone=mPhone.getText().toString();
+        Matcher matcher_phone = Pattern.compile(valid_Phone).matcher(phone);
         if (matcher_phone.matches()) {
             return true;
         } else {
@@ -103,9 +104,11 @@ public class Sign_Up_2 extends AppCompatActivity {
 
     private boolean ValidAddress() {
         String valid_address = "[A-Za-z\\d]{10,}";
-        Matcher matcher_address = Pattern.compile(valid_address).matcher(mAddress.getText().toString().toLowerCase());
-        if (matcher_address.matches()) {
-            return true;
+        String address=mAddress.getText().toString().toLowerCase();
+        Pattern pattern = Pattern.compile(valid_address);
+        Matcher matcher = pattern.matcher(String.valueOf(address));
+        if (matcher.matches()) {
+            return matcher.matches();
         } else {
             mAddress.setError(getResources().getString(R.string.invalidAddress));
             mAddress.requestFocus();
@@ -116,7 +119,8 @@ public class Sign_Up_2 extends AppCompatActivity {
 
     private boolean ValidPersonName() {
         String valid_name = "[A-Za-z]{3,}";
-        Matcher matcher_name = Pattern.compile(valid_name).matcher(mPersonName.getText().toString().toLowerCase());
+        String name=mPersonName.getText().toString().toLowerCase();
+        Matcher matcher_name = Pattern.compile(valid_name).matcher(name);
         if (matcher_name.matches()) {
             return true;
         } else {

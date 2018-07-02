@@ -38,16 +38,12 @@
             android:name=".Edit_User_Profile"
             android:parentActivityName=".User_Profile" />
         <activity
-            android:name=".WelcomeActivity"
-            android:label="@string/title_activity_welcome"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
-        <activity
             android:name=".add_event_1"
             android:parentActivityName=".Add_Event" />
         <activity
             android:name=".Add_Event"
             android:parentActivityName=".Bottom_Bar" />
-        <activity android:name=".Sign_Up_2"></activity>
+        <activity android:name=".Sign_Up_2"/>
     </application>
 
 </manifest>

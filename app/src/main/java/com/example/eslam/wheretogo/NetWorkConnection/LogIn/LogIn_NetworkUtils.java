@@ -1,11 +1,7 @@
-package com.example.eslam.wheretogo.NetWorkConnection;
+package com.example.eslam.wheretogo.NetWorkConnection.LogIn;
 
-import android.text.TextUtils;
+import android.net.Uri;
 
-import com.example.eslam.wheretogo.Model.Event_Model;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,27 +11,32 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.List;
 
-public final class NetworkUtils {
-
+public final class LogIn_NetworkUtils {
     private static final int READTIMEOUT = 10000;
     private static final int CONNECTTIMEOUT = 15000;
-    private static final String REQUEST_METHOD_GET = "GET";
     private static final String REQUEST_METHOD_POST = "POST";
 
-    public static URL createUrl(String mUrl) {
+
+    private static final String URL_LOGIN = "http://events.bstest.online/api/user/Login";
+    private static final String USERNAME_LOGIN = "username";
+    private static final String PASSWORD_LOGIN = "password";
+
+    public static URL createUrl(String mName, String mPass) {
+        Uri uri = Uri.parse(URL_LOGIN).
+                buildUpon().appendQueryParameter(USERNAME_LOGIN, mName)
+                .appendQueryParameter(PASSWORD_LOGIN, mPass)
+                .build();
         URL url = null;
         try {
-            url = new URL(mUrl);
+            url = new URL(uri.toString());
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
         return url;
     }
 
-    public static String readFromStreamReader(InputStream inputStream) throws IOException {
+    private static String readFromStreamReader(InputStream inputStream) throws IOException {
         String line = "";
         StringBuilder builder = new StringBuilder();
         if (inputStream != null) {
@@ -58,7 +59,7 @@ public final class NetworkUtils {
         InputStream inputStream = null;
         try {
             httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setRequestMethod(REQUEST_METHOD_GET);
+            httpURLConnection.setRequestMethod(REQUEST_METHOD_POST);
             httpURLConnection.setConnectTimeout(CONNECTTIMEOUT);
             httpURLConnection.setReadTimeout(READTIMEOUT);
             httpURLConnection.connect();
@@ -77,34 +78,5 @@ public final class NetworkUtils {
             }
         }
         return jsonResponse;
-    }
-
-    public static List<Event_Model> extractDataFromJson(String json) {
-        if (TextUtils.isEmpty(json)) {
-            return null;
-        }
-        List<Event_Model> Data_event = new ArrayList<>();
-        try {
-            JSONObject root = new JSONObject(json);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        return Data_event;
-    }
-
-    public static List<Event_Model> extractEventData(String stringJson) {
-        String response = "";
-        URL url = null;
-        url = createUrl(stringJson);
-        List<Event_Model> event_models_Data;
-        try {
-            response = makeHttpRequest(url);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        event_models_Data = extractDataFromJson(response);
-        return event_models_Data;
     }
 }
