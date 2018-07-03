@@ -18,7 +18,6 @@ import java.util.List;
 public class Event_Fragment extends Fragment {
     public Event_Fragment() {
     }
-
     private Recycler_Adapter_Event adapter_event;
     private RecyclerView recyclerView;
 
@@ -31,7 +30,6 @@ public class Event_Fragment extends Fragment {
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_event);
 
         List<Event_Model> event_models = new ArrayList<>();
-
         event_models.add(new Event_Model("Cairo Football ", R.drawable.football));
         event_models.add(new Event_Model("Cairo Runners ", R.drawable.cairo));
 
@@ -46,5 +44,6 @@ public class Event_Fragment extends Fragment {
 
         return rootView;
     }
+
 }
 

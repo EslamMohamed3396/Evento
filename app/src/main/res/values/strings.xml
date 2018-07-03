@@ -99,4 +99,8 @@
 
     <!--Bottom bar Page-->
     <string name="create">Create</string>
+
+    <!-- Event Details Page-->
+    <string name="Topic_Event">Topic</string>
+    <string name="Type_Event">Type</string>
 </resources>

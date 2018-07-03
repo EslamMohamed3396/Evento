@@ -43,7 +43,8 @@
         <activity
             android:name=".Add_Event"
             android:parentActivityName=".Bottom_Bar" />
-        <activity android:name=".Sign_Up_2"/>
+        <activity android:name=".Sign_Up_2" />
+        <activity android:name=".event_details"></activity>
     </application>
 
 </manifest>
